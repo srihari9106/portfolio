@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>portfolio projects</title>
+    <style> 
+
+body{
+   width: 100%;
+   height:100%;
+   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWvEnF7aiNRbcUFenjjattabD4CvJXqpEo0Q&s");
+   background-size: cover;
+   background-position:center;
+   overflow:hidden;
+ }
+
+ 
+ nav{
+   position: sticky;
+   
+ }
+ .nav-container{
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+
+ }
+  .links{
+    font-size: 18px;
+      margin-top: 40px;
+      float:left;
+      margin-left: 10px; 
+      
+ } 
+ .links a{
+      color:white;
+      padding: 15px 30px;
+      position: relative;
+      
+ }
+ 
+ .links a:hover{
+     color:aqua;
+      
+ }
+ .links a span{
+  content: '';
+  position: absolute;
+  top: 0;
+  left:0;
+  width:100%;
+  height: 100%;
+  z-index: -1;
+  border-radius: 15px;
+  border-bottom:2px solid aqua;
+  transform: scale(0)  translateY(40px);
+  transition:0.5s;
+
+ }
+
+ .links a:hover span{
+  transform: scale(.9) translateY(0);
+  opacity: 1;
+  
+ }
+
+  
+ .logo{
+   color:white;
+   font-size: 32px;
+   font-weight:bold;
+   margin-top: 40px;
+
+ }
+ .logo span{
+    color:orangered;
+    text-shadow: 0 2px 10px  none;
+ }
+
+ hr {
+   margin-top: 30px;
+ }
+
+ .head h1{
+  color: white;
+  text-align: center;
+ }
+ .head hr{
+    width: 100px;
+    height: 5px;
+    background-color: white;
+    margin-top:-15px;
+ }
+
+ .projects {
+    text-align: center;
+    padding: 20px;
+}
+
+.projects h1 {
+    margin-left: 0;
+    display: inline-block;
+    position: relative;
+    font-size: 2.4em;
+    color: #fdfefd;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.projects h1::after {
+    content: '';
+    position: absolute;
+    left: 50px;
+    top: 130%;
+    transform: translateY(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: #ffffff;
+}
+
+.projects .content-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 20px;
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+}
+
+.projects .project {
+    flex: 1;
+    background-color: rgb(55, 65, 65);
+    border-radius: 8px;
+    padding: 10px;
+    color: rgb(226, 238, 238);
+    text-align: left;
+    max-width: 350px;
+    margin: 10px auto; /* Centers the boxes on small screens */
+    transition: background-color 0.4s ease, color 0.4s ease; /* Smooth transition */
+}
+
+.projects .project:hover {
+    background-color: rgb(20, 21, 21) !important; /* Background color on hover */
+    box-shadow: 0px 0px 4px 2px #04e1e9;
+    color: red !important; /* Text color change on hover */
+}
+
+.projects .project img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0; 
+}
+
+.projects .project h2 a {
+    text-decoration: none;
+    color: rgb(216, 213, 21);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 28px;
+}
+
+.projects .project h2 {
+    text-align: center;
+}
+  </style>
+    
+</head>
+<body>
+    <header class="head">
+        <nav>
+            <div class="nav-container">
+               <div class="logo"> 
+                  SRI HARI <span> CHOWDARY</span>
+               </div>
+       <div class="links">
+       <b> <a href="http://127.0.0.1:5500/home.html#" style="text-decoration: none;">Home<span></span></a> 
+        <a href="http://127.0.0.1:5500/about.html#" style="text-decoration: none;" >About<span></span></a> 
+        <a href="http://127.0.0.1:5500/education.html#" style="text-decoration: none;">Education<span></span></a> 
+        <a href="http://127.0.0.1:5500/skills.html#" style="text-decoration: none;">Skills<span></span></a> 
+        <a href="http://127.0.0.1:5500/projects.html#" style="text-decoration: none;">Projects<span></span></a> 
+        <a href="http://127.0.0.1:5500/contact.html#" style="text-decoration: none;">Contact<span></span></a> </b>
+      </div>
+     </nav> 
+    </header>
+     <hr> 
+     
+     <div class="projects">
+      <h1>Projects</h1>
+      <div class="content-container">
+      <div class="project"><a href="file:///C:/Users/91996/OneDrive/Desktop/me/fastfood.html  "><img src="./images/fastfood.png" alt=""><h2>Fast Food</a></h2></div>
+      <div class="project"><a href=" https://srihari9106.github.io/Hospital/"><img src="./images/mediplus.png" alt=""><h2>Doctor Website</a></h2></div>
+      <div class="project"><a href=" file:///C:/Users/91996/OneDrive/Desktop/me/nature.html"><img src="./images/nature.png" alt=""><h2>Nature</a></h2></div>
+      <div class="project"><a href="file:///C:/Users/91996/OneDrive/Desktop/me/googleform.html/"><img src="./images/google.png" alt=""><h2>Google Form</a></h2></div>
+          
+  </div>
+
+</body>
+</html>

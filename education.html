@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>portfolio education</title>
+    <style> 
+body{
+   width: 100%;
+   height:100%;
+   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWvEnF7aiNRbcUFenjjattabD4CvJXqpEo0Q&s");
+   background-size: cover;
+   background-position:center;
+   overflow:hidden;
+ }
+
+ 
+ nav{
+   position: sticky;
+   
+ }
+ .nav-container{
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+
+ }
+  .links{
+    font-size: 18px;
+      margin-top: 40px;
+      float:left;
+      margin-left: 10px; 
+      
+ } 
+ .links a{
+      color:white;
+      padding: 15px 30px;
+      position: relative;
+      
+ }
+ 
+ .links a:hover{
+     color:aqua;
+      
+ }
+ .links a span{
+  content: '';
+  position: absolute;
+  top: 0;
+  left:0;
+  width:100%;
+  height: 100%;
+  z-index: -1;
+  border-radius: 15px;
+  border-bottom:2px solid aqua;
+  transform: scale(0)  translateY(40px);
+  transition:0.5s;
+
+ }
+
+ .links a:hover span{
+  transform: scale(.9) translateY(0);
+  opacity: 1;
+  
+ }
+
+  
+ .logo{
+   color:white;
+   font-size: 32px;
+   font-weight:bold;
+   margin-top: 40px;
+
+ }
+ .logo span{
+    color:orangered;
+    text-shadow: 0 2px 10px  none;
+ }
+
+ hr {
+   margin-top: 30px;
+ }
+
+ .degree{
+     text-align: center;
+
+ }
+ .degree h2{
+       font-family: Verdana, Geneva, Tahoma, sans-serif;
+       font-size: 30px;
+       margin-top: 40px;
+       color: white;
+ }
+
+ .degree h2 hr{
+    width: 100px;
+    height: 3px;
+    margin-left: 720px;
+    margin-top: 2px;
+    background-color: white;
+ }
+
+ .education .box{
+   border: 0px solid none ;
+   width:28%;
+   margin-left:30px;
+   padding: 10px 20px;
+   float: left;
+   margin-top: 50px;
+   border-radius: 20px;
+   box-shadow: 1px 1px 15px 0px ;
+   color: white;
+ }
+
+ .box:hover{
+     color: orange;
+     transition-duration: 0.4s;
+     transform: scale(1.03);
+ }
+ 
+ .education .box h3{
+  color:white;
+ }
+  
+ .education .box ul{
+  color:white;
+ }
+ .education .box img{
+  width: 100px ;
+  height: 100px;
+  position: relative;
+
+ }
+  
+
+</style>
+    
+</head>
+<body>
+     <header class="head">
+    <nav>
+        <div class="nav-container">
+           <div class="logo"> 
+              SRI HARI <span> CHOWDARY</span>
+           </div>
+           <div class="links">
+             <b> <a href="http://127.0.0.1:5500/home.html#" style="text-decoration: none;">Home<span></span></a> 
+               <a href="http://127.0.0.1:5500/about.html#" style="text-decoration: none;" >About<span></span></a> 
+               <a href="http://127.0.0.1:5500/education.html#" style="text-decoration: none;">Education<span></span></a> 
+               <a href="http://127.0.0.1:5500/skills.html#" style="text-decoration: none;">Skills<span></span></a> 
+               <a href="http://127.0.0.1:5500/projects.html#" style="text-decoration: none;">Projects<span></span></a> 
+               <a href="http://127.0.0.1:5500/contact.html#" style="text-decoration: none;">Contact<span></span></a>  </b> 
+     
+                
+           </div>   
+        </div>
+    </nav>
+</header>
+    <hr>
+
+      <div class="degree"> 
+      <h2> 
+        <b>Education </b>
+        <span><hr></span>
+      </h2>
+    </div>
+    <div class="education"> 
+      <div class="box">
+        
+         <h3>High School:  Z P High School</h3>
+
+         <p><ul><b>
+            <li>Telugu</li>
+            <li>Hindi</li>
+            <li>English</li>
+            <li>Maths</li>
+            <li>Science</li>
+            <li>Social</li></b>
+        </ul></p>
+      </div>
+     <div class="box">
+       
+        <h3>Inter Mediate:  Geethanjali Junior College</h3>
+
+        <p><ul><b>
+           <li>Sanskrit</li>
+           <li>English</li>
+           <li>MAths 2A</li>
+           <li>Maths 2B</li>
+           <li>Physics</li>
+           <li> Chemistry</li></b>
+       </ul></p>
+       </div>
+     <div class="box">
+       
+        <h3> Degree : SDHR Degree and Pg college</h3>
+        <p><ul><b>
+           <li>Maths</li>
+           <li>Physics</li>
+           <li>Python</li>
+           <li>Java</li>
+           <li>PHP</li>
+           <li>Data Base Management System</li></b>
+       </ul></p>
+      </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
